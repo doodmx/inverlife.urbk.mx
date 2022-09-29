@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Monorama';
+    src: url('../fonts/Monora/Monorama\ Regular.otf');
+}
+@font-face {
+    font-family: 'monorama-medium';
+    src: url('../fonts/Monora/Monorama\ Medium.otf');
+}
+@font-face {
+    font-family: 'sequel-sans';
+    src: url('../fonts/Sequel_Sans/Sequel\ Sans\ Light\ Head.ttf');
+}
+@font-face {
+    font-family: 'sequel-book';
+    src: url('../fonts/Sequel_Sans/Sequel\ Sans\ Book\ Head.ttf');
+}
+@font-face {
+    font-family: 'sequel-bold';
+    src: url('../fonts/Sequel_Sans/Sequel\ Sans\ Bold\ Head.ttf');
+}
