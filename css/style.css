@@ -165,8 +165,8 @@ h1 {
 }
 
 .square_black {
-    color: var(--white);
     background-color: var(--black);
+    color: var(--white);
 }
 
 .square_container .square:nth-child(1) {
@@ -206,13 +206,13 @@ h1 {
 
 .square_container3 .square:nth-child(1) {
     font-size: 0.9em;
-    width: 70%;
+    width: 60%;
     position: relative;
     top: 10px;
+    z-index: 4;
     align-self: flex-end;
     border-radius: 60px;
     padding: 20px;
-    z-index: 4;
 }
 
 .square_container3 .square:nth-child(2) {
@@ -261,7 +261,7 @@ h1 {
     display: flex;
     width: 90%;
     justify-content: flex-start;
-    z-index: -10;
+    z-index: -100000;
 }
 .fourth_container_img img{
     margin-left: 20px;
