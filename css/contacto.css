@@ -1,0 +1,109 @@
+:root {
+    --white: #FFFFFF;
+    --light-blue: #A2B0C3;
+    --gray: #DBDDDD;
+    --green: #38D430;
+    --blue: #3B517D;
+    --black: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    min-height: 100vh;
+}
+body{
+    background-image: url(/img/city-of-chicago-2021-08-26-23-04-24-utc/city-of-chicago-2021-08-26-23-04-24-utc.png);
+    backdrop-filter: blur(40px);
+    font-family: sequel-sans;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main{
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 36px;
+}
+main a{
+    align-self: flex-end;
+}
+main .close_img{
+    padding: 1em 0;
+}
+main .logo_img{
+    margin: 0 auto;
+    margin-top: 3em;
+}
+.form_container{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    flex-grow: 2;
+}
+.form_container input {
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 30px;
+
+}
+.form_container input[type='text'] {
+    width: 90%;
+    background-color: rgba(0, 0, 0, .3);
+    border: none;
+    outline: 1px solid var(--gray);
+    color: var(--gray);
+}
+.form_container input[type='text']:focus {
+    background-color: var(--white);
+    outline: 1px solid var(--blue);
+    color: var(--black);
+}
+/* .form_container input[type='text']:hover {
+    background-color: rgba(228, 218, 218, 0.3);
+} */
+.form_container input[type='submit']{
+    width: 100%;
+    border: none;
+    background-color: var(--light-blue);
+    color: var(--white);
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footer_info {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 10px;
+
+}
+.footer_info figure img {
+    width: 40px;
+}
+.footer_info p {
+    font-size: 1.4em;
+}
+.footer_info .icon_link {
+    color: var(--white);
+    font-size: 2em;
+    padding: 4px;
+}
+#item_facebook {
+    margin-left: auto;
+}

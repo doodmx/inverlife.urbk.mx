@@ -72,6 +72,9 @@ h1 {
     font-size: 1.1em;
     line-height: 1.3em;
 }
+.first_container a{
+    margin: 0 auto;
+}
 
 .img_container {
     display: flex;
@@ -330,7 +333,7 @@ h1 {
     width: 40px;
 }
 .footer_info p {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 .footer_info .icon_link {
     color: var(--white);
