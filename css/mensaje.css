@@ -1,0 +1,57 @@
+:root {
+    --white: #FFFFFF;
+    --light-blue: #A2B0C3;
+    --gray: #DBDDDD;
+    --green: #38D430;
+    --blue: #3B517D;
+    --black: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/img/city-of-chicago-2021-08-26-23-04-24-utc/city-of-chicago-2021-08-26-23-04-24-utc.png);
+    backdrop-filter: blur(100px) drop-shadow(4px 4px 10px rgb(56, 56, 59));
+    font-family: sequel-sans;
+    color: #fff;
+    height: 100vh;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("/img/city-of-chicago-2021-08-26-23-04-24-utc/city-of-chicago-2021-08-26-23-04-24-utc.png");
+}
+main{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main a{
+    align-self: flex-end;
+}
+main .close_img{
+    padding: 1em 0;
+}
+main .text_container{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+main .text_container p:first-child{
+    color: var(--light-blue);
+    font-size: 2.5em;
+}
+main .text_container p:last-child{
+    text-align: center;
+    font-size: 1.3em;
+}
