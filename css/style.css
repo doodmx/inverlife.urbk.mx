@@ -26,14 +26,14 @@ main {
 
 /* styles first-container */
 h1 {
-    margin-top: 60px;
+    margin-top: 2em;
     font-size: 2.5em;
     line-height: 1.3em;
     font-weight: lighter;
 }
 
 .main_container {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -61,8 +61,10 @@ h1 {
 }
 
 .first_container {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     gap: 20px;
 }
 
@@ -87,6 +89,14 @@ h1 {
         linear-gradient(to bottom, #1d2024 0%, #3b517d 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
+}
+.second_container{
+    background-image: url('/img/Group\ 751.svg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: -100;
 }
 .second_container_images{
     /* background-color: rgb(207, 191, 191); */
@@ -225,7 +235,16 @@ h1 {
     z-index: 5;
 }
 
+.background_container{
+    background-image: url('/img/Group\ 752.svg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: -470px -30px;
+    position: relative;
+    z-index: -100;
 
+}
 .third_container {
     display: flex;
     flex-direction: column;
@@ -320,4 +339,10 @@ h1 {
 }
 #item_facebook {
     margin-left: auto;
+}
+
+@media (min-width: 580px){
+    .second_container{
+        background-size: cover;
+    }
 }
