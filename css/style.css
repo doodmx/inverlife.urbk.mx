@@ -340,6 +340,37 @@ h1 {
 #item_facebook {
     margin-left: auto;
 }
+.float{
+	position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 80px;
+    right: 45px;
+	background-color:var(--white);
+	color:var(--black);
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	/* box-shadow: 1px 1px 1px #999; */
+    z-index:100;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  
+}
+.float:hover {
+	text-decoration: none;
+	color: var(--white);
+    background-color:#25d366;
+    
+}
+
+.my-float{
+	/* margin-top:16px; */
+}
+.my-float:hover{
+    transform: scale(2.2);
+}
 
 @media (min-width: 580px){
     .second_container{
