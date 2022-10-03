@@ -59,14 +59,16 @@ main .logo_img{
     border-radius: 30px;
 
 }
-.form_container input[type='text'] {
+.form_container input[type='text']
+,.form_container input[type='email'] {
     width: 90%;
     background-color: rgba(0, 0, 0, .3);
     border: none;
     outline: 1px solid var(--gray);
     color: var(--gray);
 }
-.form_container input[type='text']:focus {
+.form_container input[type='text']:focus,
+.form_container input[type='email']:focus {
     background-color: var(--white);
     outline: 1px solid var(--blue);
     color: var(--black);
