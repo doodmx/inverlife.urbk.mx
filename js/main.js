@@ -60,7 +60,6 @@ document.addEventListener("mouseover", function (event) {
         desktop_img2.classList.remove('img2_animation');
         desktop_img3.classList.remove('mostrar');
         desktop_img3.classList.remove('img3_animation');
-
     }
     else {
         main_square.classList.add('reduce_width');

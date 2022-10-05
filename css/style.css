@@ -402,7 +402,6 @@ h1 {
         display: block;
         display: flex;
         justify-content: center;
-        flex-basis: auto;
         padding: 30px;
         height: 270px;
         gap: 16px;
@@ -455,11 +454,11 @@ h1 {
         width: 60%;
         position: relative;
         z-index: 2000;
-        font-size: 1.7em;
-        transition: width 700ms ease-in;
+        font-size: 1.6em;
+        transition: width 700ms linear;
     }
     .second_square{
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
     .reduce_width{
         width: 20%;
@@ -553,7 +552,6 @@ h1 {
         width: 149px;
         height: 149px;
         object-fit: fill;
-        
     }
     .fourth_container div:last-child{
         margin: none;
@@ -687,6 +685,10 @@ h1 {
     .main_square, 
     .second_square{
         font-size: 1.3em;
+    }
+    .desktop_img1
+    ,.desktop_img3{
+        background-size: 370%;
     }
 }
 @media (min-width: 1500px) {
@@ -848,7 +850,7 @@ h1 {
     }
 }
 
-@keyframes main_square {
+/* @keyframes main_square {
     from{
         transform: translateX(0);
         transform: scale(0.33);
@@ -857,4 +859,4 @@ h1 {
         transform: translateX(-100%);
         transform: scale(0.33);
     }
-}
+} */
