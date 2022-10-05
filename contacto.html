@@ -19,26 +19,31 @@
         <a href="/index.html">
             <figure class="close_img">
                 <img src="/img/Icon ionic-ios-close.svg" alt="Cerrar">
+                <p>Atrás</p>
             </figure>
         </a>
-        <figure class="log_img">
-            <img src="/img/U transparente.svg" alt="Logo Velta">
-        </figure>
-        <form action="https://formsubmit.co/asesor.comercial@urbk.mx" class="form_container" method="POST">
-            <!-- Honeypot --> 
-            <input type="text" name="_honey" style="display: none;">
-            <!-- CC -->
-            <input type="hidden" name="_cc" value="projectmanager@dood.mx">
-            <!--Quitar captcha-->
-            <input type="hidden" name="_captcha" value="false">
-            <!-- Página de agradecimiento-->
-            <input type="hidden" name="_next" value="https://inverlife.urbk.us/mensaje.html">
-            
-            <input type="text" id="form_name" name="name" placeholder="Nombre">
-            <input type="text" id="form_lastname" name="lastname"placeholder="Apellidos">
-            <input type="email" id="form_email" name="email" placeholder="Correo">
-            <input type="submit" value="Enviar">
-        </form>
+        <div>
+            <form action="https://formsubmit.co/asesor.comercial@urbk.mx" class="form_container" method="POST">
+                <figure class="logo_img">
+                    <img src="/img/U transparente.svg" alt="Logo Velta">
+                </figure>
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+                <!-- CC -->
+                <input type="hidden" name="_cc" value="projectmanager@dood.mx">
+                <!--Quitar captcha-->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Página de agradecimiento-->
+                <input type="hidden" name="_next" value="https://inverlife.urbk.us/mensaje.html">
+
+                <input type="text" id="form_name" name="name" placeholder="Nombre" required>
+                <input type="text" id="form_lastname" name="lastname" placeholder="Apellidos" required>
+                <input type="email" id="form_email" name="email" placeholder="Correo" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="img_container"></div>
+
     </main>
     <footer>
         <div class="footer_info">

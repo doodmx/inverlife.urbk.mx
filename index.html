@@ -10,6 +10,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="shortcut icon" href="/img/U transparente.svg" type="image/x-icon" />
     
     <title>Inverlife</title>
@@ -19,7 +23,7 @@
     <main>
         <section class="main_container">
             <div class="first_container">
-                <div class="logo_container ">
+                <div class="logo_container">
                     <figure class="img_container">
                         <img src="./img/Place Image Here/Place Image Here.png" alt="Logo">
                     </figure>
@@ -27,10 +31,12 @@
                         <img src="./img/U llena.svg" alt="Logo Velta">
                     </figure>
                 </div>
-                <h1>Invierte en ti mismo, invierte en Urbk</h1>
-                <p class="subtitle">Invertir es mucho más que una decisión financiera, se trata de vivir la vida que
-                    quieres.</p>
-                <a href="/contacto.html"><button class="btn btn_blue">Invertir ahora</button></a>
+                <div class="text_container">
+                    <h1>Invierte en ti mismo, invierte en Urbk</h1>
+                    <p class="subtitle">Invertir es mucho más que una decisión financiera, se trata de vivir la vida que
+                        quieres.</p>
+                    <a href="/contacto.html"><button class="btn btn_blue">Invertir ahora</button></a>
+                </div>
             </div>
             <div class="second_container">
                 <div class="second_container_images">
@@ -48,46 +54,46 @@
                     </figure>
                 </div>
                 <div class="square_container">
-                    <p class="square square_font square_white">Dar el primer paso hacia una nueva vida.</p>
+                    <p class="square square_font square_white" id="square_hover">Dar el primer paso hacia una nueva vida.</p>
                     <p class="square square_font square_black">¡Nunca había sido tan fácil!</p>
                 </div>
             </div>
             <div class="background_container">
 
             <div class="third_container">
-                <figure class="third_container_img">
-                    <img src="./img/woman-traveling-on-the-rocky-coastline-in-lagos-p-2022-02-02-22-05-01-utc/woman-traveling-on-the-rocky-coastline-in-lagos-p-2022-02-02-22-05-01-utc.png"
-                        alt="Mujer viajando">
+                <figure  class="third_container_img">
+                    <img id="img_woman" src="./img/woman-traveling-on-the-rocky-coastline-in-lagos-p-2022-02-02-22-05-01-utc/woman-traveling-on-the-rocky-coastline-in-lagos-p-2022-02-02-22-05-01-utc.png"
+                        alt="Mujer viajando" class="ocultar">
                 </figure>
                 <div class="square_container2">
-                    <p class="square square_font square_black">Empieza a construir tu futuro desde $2.000 mxn.</p>
-                    <p class="square square_white square_paragraph">Ofrecemos un plan elegante con un
+                    <p id="square_black" class="square square_font square_black" onmouseover="mostrar()" onmouseout="ocultar()">Empieza a construir tu futuro desde $2.000 mxn.</p>
+                    <p class="square square_white square_paragraph" id="square_white" onmouseover="mostrar()">Ofrecemos un plan elegante con un
                         <strong>rendimiento constante del 8%</strong> de tu inversión en un plazo minimo de
                         <strong>6 meses.</strong>
                     </p>
                 </div>
-                <div>
+                <div >
                     <figure>
-                        <img src="./img/car-2021-08-29-15-13-24-utc/car-2021-08-29-15-13-24-utc.png"
-                            alt="Retrovisor de auto">
+                        <img id="img_car" src="./img/car-2021-08-29-15-13-24-utc/car-2021-08-29-15-13-24-utc.png"
+                            alt="Retrovisor de auto" class="ocultar">
                     </figure>
                 </div>
             </div>
             <div class="fourth_container">
                 <figure class="fourth_container_img">
-                    <img src="./img/wedding-couple-at-wedding-ceremony-back-view-2021-08-28-18-33-42-utc/wedding-couple-at-wedding-ceremony-back-view-2021-08-28-18-33-42-utc.png"
-                        alt="Pareja en ceremonia de matrimonio">
+                    <img id="img_wedding" src="./img/wedding-couple-at-wedding-ceremony-back-view-2021-08-28-18-33-42-utc/wedding-couple-at-wedding-ceremony-back-view-2021-08-28-18-33-42-utc.png"
+                        alt="Pareja en ceremonia de matrimonio" class="ocultar">
                 </figure>
                 <div class="square_container3">
-                    <p class="square square_black">Urbk es la institución financiera que nos hubiera gustado tener.</p>
-                    <p class="square square_white">El plazo de inversión es de 6 meses y te dará un 8% de rendimiento sobre tu inversión de $2,000 Mxn.
+                    <p class="square square_black"  onmouseover="mostrar2()" onmouseout="ocultar2()">Urbk es la institución financiera que nos hubiera gustado tener.</p>
+                    <p class="square square_white" id="square_hover2" onmouseover="mostrar2()">El plazo de inversión es de 6 meses y te dará un 8% de rendimiento sobre tu inversión de $2,000 Mxn.
                         Se trata de un tipo de interés mucho más elevado que el de la mayoría de las cuentas de ahorro y la
                         banca tradicional.</p>
                 </div>
                 <div>
                     <figure>
-                        <img src="./img/moody-autumn-day-in-the-dolomites-forest-and-mount-2022-02-08-22-39-28-utc/moody-autumn-day-in-the-dolomites-forest-and-mount-2022-02-08-22-39-28-utc.png"
-                            alt="Otoño en las montañas">
+                        <img id="img_mount" src="./img/moody-autumn-day-in-the-dolomites-forest-and-mount-2022-02-08-22-39-28-utc/moody-autumn-day-in-the-dolomites-forest-and-mount-2022-02-08-22-39-28-utc.png"
+                            alt="Otoño en las montañas" class="ocultar">
                     </figure>
                 </div>
             </div>
@@ -104,8 +110,8 @@
                         <img src="./img/U llena.svg" alt="Logo urbk">
                     </figure>
                     <p>Urbk.us</p>
-                    <a href="" id="item_facebook" class="icon_link"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="" id="item_instagram" class="icon_link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/UrbkFinancialGroup" target="_blank" id="item_facebook" class="icon_link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/urbk.financialgroup/" target="_blank" id="item_instagram" class="icon_link" ><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </section>
@@ -114,5 +120,6 @@
         </a>
     </main>
 </body>
+<script src="/js/main.js"></script>
 
 </html>
