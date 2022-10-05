@@ -406,7 +406,6 @@ h1 {
         padding: 30px;
         height: 270px;
         gap: 16px;
-        z-index: 999;
     }
     .main_square, .second_square{
         display: grid;
@@ -452,22 +451,19 @@ h1 {
         display: none;
     }
     
-    .second_container_desktop .main_square{
+    .main_square{
         width: 60%;
         position: relative;
         z-index: 2000;
         font-size: 1.7em;
-        transition: width 400ms ease-in;
+        transition: width 700ms ease-in;
     }
-    .second_container_desktop .second_square{
+    .second_square{
         font-size: 1.7em;
     }
-    .second_container_desktop .main_square:hover{
+    .reduce_width{
         width: 20%;
     }
-    /* .second_container_desktop:hover .main_square{
-        width: 20%;
-    } */
     .second_square{
         display: none;
     }
@@ -566,8 +562,6 @@ h1 {
     .square_container3 .square:nth-child(2){
         z-index: 0;
     }
-    
-    
     .fourth_container .fourth_container_img{
         position: static;
         z-index: 1;
@@ -688,7 +682,12 @@ h1 {
     .square_container3{
         margin: 0;
     }
-    
+}
+@media (max-width:1200px) {
+    .main_square, 
+    .second_square{
+        font-size: 1.3em;
+    }
 }
 @media (min-width: 1500px) {
     h1 {
