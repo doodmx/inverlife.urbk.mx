@@ -79,6 +79,7 @@ main .logo_img {
     border: none;
     outline: 1px solid var(--gray);
     color: var(--gray);
+    background-color: rgb(0,0,0, 0.3);
 }
 
 .form_container input[type='text']:focus,
@@ -235,8 +236,8 @@ main .logo_img {
     .form_container {
         gap: 1.6em;
     }
-
     .form_container input {
-        font-size: 0.9em;
+        font-size: 1.1em;
+        color: var(--white);
     }
 }
