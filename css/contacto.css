@@ -34,7 +34,6 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    /* align-items: center; */
     gap: 36px;
 }
 
@@ -87,10 +86,6 @@ main .logo_img {
     outline: 1px solid var(--blue);
     color: var(--black);
 }
-
-/* .form_container input[type='text']:hover {
-    background-color: rgba(228, 218, 218, 0.3);
-} */
 .form_container input[type='submit'] {
     width: 100%;
     border: none;
@@ -100,6 +95,11 @@ main .logo_img {
     margin-top: 30px;
     margin-bottom: 20px;
 }
+.form_container input[type="text"]:required:valid,
+.form_container input[type="email"]:required:valid{
+    background-color: var(--white);
+    color: var(--black);
+   }
 
 .img_container {
     display: none;
@@ -115,7 +115,7 @@ main .logo_img {
     margin-bottom: 10px;
 }
 
-.footer_info figure img {
+.footer_info a img {
     width: 40px;
 }
 
@@ -181,8 +181,6 @@ main .logo_img {
         background-color: var(--black);
         backdrop-filter: blur(50px);
         -webkit-backdrop-filter: blur(50px);
-        /* padding: 40px; */
-
     }
     .form_container {
         margin-top: 0;
@@ -201,11 +199,6 @@ main .logo_img {
 
     .form_container input[type='submit'] {
         width: 40%;
-        /* border: none;
-        background-color: var(--light-blue);
-        color: var(--white);
-        letter-spacing: 1px;
-         */
         margin-top: 20px;
         margin-bottom: 40px;
         cursor: pointer;

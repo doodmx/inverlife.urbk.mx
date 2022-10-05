@@ -301,7 +301,7 @@ h1 {
     align-items: center;
     gap: 30px;
 }
-.footer_info figure img {
+.footer_info a img {
     width: 40px;
 }
 .footer_info p {
@@ -339,6 +339,9 @@ h1 {
 .my-float:hover{
     transform: scale(2.2);
 }
+.second_container_desktop{
+    display: none;
+}
 
 @media (min-width: 580px){
     .second_container{
@@ -357,6 +360,7 @@ h1 {
     .first_container{
         flex-direction: row-reverse;
         margin-top: 100px;
+        background-image: none;
     }
     .logo_container{
         width: 50%;
@@ -391,6 +395,84 @@ h1 {
     .second_container{
         margin-top: 140px;
         background-image: none;
+        display: none;
+    }
+    .second_container_desktop{
+        margin-top: 60px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-basis: auto;
+        padding: 30px;
+        height: 270px;
+        gap: 16px;
+        z-index: 999;
+    }
+    .main_square, .second_square{
+        display: grid;
+        place-items: center;
+    }
+    .desktop_img1{
+        background: transparent url('/img/cheerful-woman-painting-the-walls-of-new-home-ren-2021-12-09-07-27-07-utc/cheerful-woman-painting-the-walls-of-new-home-ren-2021-12-09-07-27-07-utc@3x.png') 0% 0% no-repeat padding-box;
+        background-size: 300%;
+        background-position: center;
+        border-radius: 33px;
+        /* transform: translateX(200%); */
+        display: none;
+    }
+    .img1_animation{
+        animation-name: img1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .img2_animation{
+        animation-name: img2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .img3_animation{
+        animation-name: img3;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .desktop_img2{
+        background: transparent url('/img/group-of-students-studying-on-laptop-2022-02-02-05-06-20-utc/group-of-students-studying-on-laptop-2022-02-02-05-06-20-utc@3x.png') 0% 0% no-repeat padding-box;
+        background-size: 300%;
+        background-position: center;
+        border-radius: 33px;
+        /* transform: translateX(-300%); */
+        display: none;
+    }
+    .desktop_img3{
+        background: transparent url('/img/travel-image-travelers-team-look-on-the-mountain-2022-02-02-03-58-37-utc/travel-image-travelers-team-look-on-the-mountain-2022-02-02-03-58-37-utc@3x.png') 0% 0% no-repeat padding-box;
+        background-size: 300%;
+        background-position: center;
+        border-radius: 33px;
+        /* transform: translateX(-400%); */
+        display: none;
+    }
+    
+    .second_container_desktop .main_square{
+        width: 60%;
+        position: relative;
+        z-index: 2000;
+        font-size: 1.7em;
+        transition: width 400ms ease-in;
+    }
+    .second_container_desktop .second_square{
+        font-size: 1.7em;
+    }
+    .second_container_desktop .main_square:hover{
+        width: 20%;
+    }
+    /* .second_container_desktop:hover .main_square{
+        width: 20%;
+    } */
+    .second_square{
+        display: none;
+    }
+    .desktop_item{
+        width: 20%;
     }
     .second_container .second_container_images{
         display: none;
@@ -413,7 +495,6 @@ h1 {
         justify-content: flex-end;
         align-items: center;
         gap: 60px;
-   
     }
     
     .square_container3 .square:first-child{
@@ -437,6 +518,12 @@ h1 {
     }
     .mostrar{
         display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mostrarflex{
+        display: flex;
     }
     .mostrar2{
         display: block;
@@ -553,6 +640,7 @@ h1 {
     .second_container{
         z-index: auto;
         display: flex;
+        display: none;
     }
     .square_container2,
     .square_container3{
@@ -624,7 +712,9 @@ h1 {
     .square_container2 .square:first-child,
     .square_container3 .square:nth-child(1){
         width: 90%;
+        font-size: 1.6em;
     }
+    
     .square_container2 .square:last-child,
     .square_container3 .square:nth-child(2){
         width: 90%;
@@ -635,6 +725,10 @@ h1 {
         height: 240px;
         line-height: 240px; 
         font-size: 1.8em;
+    }
+    .second_container_desktop{
+        height: 320px;
+        gap: 30px;
     }
     .info_container_in>p {
         width: 50%;
@@ -671,6 +765,11 @@ h1 {
         height: 280px;
         line-height: 280px; 
         font-size: 2.2em;
+    }
+    .second_container_desktop{
+        margin: 200px 0 130px;
+        height: 400px;
+        gap: 50px;
     }
     .info_container_in>p {
         width: 40%;
@@ -715,25 +814,48 @@ h1 {
     .fourth_container div figure{
         padding-top: 0;
     }
+    .second_container_desktop .main_square,
+    .second_container_desktop .second_square{
+        font-size: 2em;
+    }
 
     
 }
 
 
 /* Animations */
-@keyframes moveleft-right {
+@keyframes img1 {
     from{
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
     to{
         transform: translateX(0);
     }
 }
-@keyframes moveright-left {
+@keyframes img2 {
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes img3 {
+    from{
+        transform: translateX(-400%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes main_square {
     from{
         transform: translateX(0);
+        transform: scale(0.33);
     }
     to{
         transform: translateX(-100%);
+        transform: scale(0.33);
     }
 }

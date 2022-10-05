@@ -41,3 +41,34 @@ function mostrar2(){
     square_hover2.classList.add('animate__animated');
     square_hover2.classList.add('animate__fadeInDown');
 }
+
+const main_square = document.querySelector('.main_square');
+const second_square = document.querySelector('.second_square');
+const desktop_img1 = document.querySelector('.desktop_img1');
+const desktop_img2 = document.querySelector('.desktop_img2');
+const desktop_img3 = document.querySelector('.desktop_img3');
+console.log(desktop_img2);
+
+function mostrarAnimacion(){
+    // main_square.classList.add('img')
+    second_square.classList.add('mostrar');
+    desktop_img1.classList.add('mostrar');
+    desktop_img1.classList.add('img1_animation');
+    desktop_img2.classList.add('mostrar');
+    desktop_img2.classList.add('img2_animation');
+    desktop_img3.classList.add('mostrar');
+    desktop_img3.classList.add('img3_animation');
+}
+function ocultarAnimacion(){
+    second_square.classList.add('ocultar');
+    second_square.classList.remove('mostrar');
+    desktop_img1.classList.add('ocultar');
+    desktop_img1.classList.remove('mostrar');
+    desktop_img2.classList.add('ocultar');
+    desktop_img2.classList.remove('mostrar');
+    desktop_img3.classList.add('ocultar');
+    desktop_img3.classList.remove('mostrar');
+    desktop_img1.classList.remove('img1_animation');
+    desktop_img2.classList.remove('img2_animation');
+    desktop_img3.classList.remove('img3_animation');
+}
