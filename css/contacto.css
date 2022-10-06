@@ -21,6 +21,7 @@ html {
 body {
     background-image: url(/img/city-of-chicago-2021-08-26-23-04-24-utc/city-of-chicago-2021-08-26-23-04-24-utc.png);
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     font-family: sequel-sans;
     color: #fff;
     display: flex;
