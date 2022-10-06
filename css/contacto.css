@@ -76,10 +76,11 @@ main .logo_img {
 .form_container input[type='text'],
 .form_container input[type='email'] {
     width: 90%;
-    border: none;
+    border: 1px solid var(--gray);
     outline: 1px solid var(--gray);
     color: var(--gray);
     background-color: rgb(0,0,0, 0.3);
+    border-radius: 30px;
 }
 
 .form_container input[type='text']:focus,
