@@ -319,8 +319,8 @@ h1 {
 	position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 80px;
-    right: 45px;
+    bottom: 20px;
+    right: 20px;
 	background-color:var(--white);
 	color:var(--black);
 	border-radius:50px;
